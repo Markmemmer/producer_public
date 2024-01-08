@@ -4,6 +4,9 @@ pipeline {
             label 'docker-agent-alpine'
         }
     }
+    triggers {
+        pollSCM('* * * * *')
+    }
     stages {
         stage('Temp-Test') {
             steps {

@@ -31,6 +31,9 @@ class ProducerApplicationTests {
 		for (int i = 0; i < 100; i++) {
 			producerService.sendDataToQueue("18");
 		}
+		for (int i = 0; i < 10; i++) {
+			producerService.sendDataToQueue("19");
+		}
 	}
 
 }
